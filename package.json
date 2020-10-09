@@ -1,0 +1,24 @@
+{
+  "name": "ampr-music-player",
+  "version": "1.0.0",
+  "description": "An Music Player Created by DF Team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DFCommunity/ampr-music.git"
+  },
+  "keywords": [
+    "ampr",
+    "dftechs",
+    "music"
+  ],
+  "author": "BRAVO68WEB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DFCommunity/ampr-music/issues"
+  },
+  "homepage": "https://github.com/DFCommunity/ampr-music#readme"
+}
