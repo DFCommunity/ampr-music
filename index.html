@@ -5,32 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMPr Music</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/DFCommunity/img-stack/master/AMPr.png" sizes="16x16" type="image/png"> 
+    <link rel="icon" href="https://raw.githubusercontent.com/DFCommunity/img-stack/master/AMPr.png" sizes="16x16"
+        type="image/png">
 
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
-        crossorigin="anonymous" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material-grid.min.css"
-        integrity="sha512-VJeLA+7kmiV9FLqexXznK9XO8Y6+HokGVyO8Fs3cKttg0mYDrCh+wj5YAbdT9nWiHUyruCxQM9wlBF9heHPhDQ=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
-        integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css" crossorigin="anonymous" />
 </head>
 
 <body>
-    Hello World!!
-    <center><img src="https://raw.githubusercontent.com/DFCommunity/img-stack/master/AMPr.png" alt="" width="50%" height="50%"></center>
+    <div class="back-1">
+        <br>
+        <div class="banner">
+            <div class="typed_wrap">
+                <span class="text-slider-items"> 
+                    A computer Science portal for  
+                    geeks, A place to pratice code 
+                </span> 
+                <strong class="text-slider"></strong> 
+            </div>
+        </div>
+        <center><img src="https://raw.githubusercontent.com/DFCommunity/img-stack/master/AMPr.png" width="25%"
+                height="25%">
+        </center>
+        <br>
+        <div class="orange dark center">
+            <div class="custom-1">
+                <div id="aplayer"></div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <script> 
+        if ($(".text-slider").length == 1) { 
+              
+            var typed_strings =  
+                $(".text-slider-items").text(); 
+  
+            var typed = new Typed(".text-slider", { 
+                strings: typed_strings.split(", "), 
+                typeSpeed: 50, 
+                loop: true, 
+                backDelay: 900, 
+                backSpeed: 30, 
+            }); 
+        } 
+    </script> 
+    <!-- Cross Origin Script -->
+    <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js" crossorigin="anonymous"></script>
+    <!-- JQuery Stuff -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous">
+    </script>
+
+    <!-- Bootstrap and Visuals -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js"
+        crossorigin="anonymous"></script>
+    <!-- React stuff -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- Animations stuff -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/favico.js/0.3.10/favico.min.js" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" crossorigin="anonymous">
+    </script>
+    <!-- Looks -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.11.5/polyfill.min.js" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" crossorigin="anonymous">
+    </script>
+    <!-- Others -->
     <script src="assets/style.js"></script>
-
-
 
 </body>
 
